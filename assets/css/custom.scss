@@ -3,14 +3,15 @@
 
 @import "minimal-mistakes";
 
-/* 본문 */
+/* 본문은 세리프 */
 body, p, li {
-  font-family: "Inter", "Noto Sans KR", sans-serif;
-  font-weight: 400;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
-/* 제목 */
-h1, h2, h3, h4 {
-  font-family: "Inter", "Noto Sans KR", sans-serif;
+/* 제목은 산세리프 */
+h1, h2, h3 {
+  font-family: "Inter", sans-serif;
   font-weight: 600;
 }
