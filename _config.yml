@@ -1,11 +1,11 @@
 title: Inseon Jeong
 description: IR Job Market Candidate
 url: "https://inseonjeong.github.io"
-baseurl: ""                     # 중요
+baseurl: ""
 
 remote_theme: mmistakes/minimal-mistakes
 plugins:
-  - jekyll-remote-theme         # remote_theme 쓸 때 필요
+  - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
@@ -36,17 +36,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
- 
-# Simple 4-tab nav like Alex's site
-nav:
-  - title: Home
-    url: /
-  - title: Research
-    url: /research/
-  - title: Teaching
-    url: /teaching/
-  - title: CV
-    url: /cv/
+
+# (권장) 내비게이션은 _data/navigation.yml에서 관리
+# 이 'nav:' 블록은 Minimal Mistakes가 쓰지 않으니 지워도 됨
 
 sass:
   sass_dir: assets/css
