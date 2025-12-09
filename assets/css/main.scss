@@ -67,3 +67,9 @@ a:hover, a:focus { color: darken($ucsd-ocean-blue, 12%); text-decoration: underl
   margin-bottom: 1rem;
 }
 
+/* 왼쪽 masthead branding 영역 숨기기 (테마 구조 유지) */
+.masthead__branding {
+  display: none !important;
+}
+
+
