@@ -8,4 +8,4 @@ I am a Ph.D. candidate in Political Science at UC San Diego. My research sits at
 
 **Job Market Paper.** *Navigating Gender Bias in Security Leadership: [full title here]*. One-sentence contribution line here.  
 
-**Research Interests.** Gender & IR, Crisis Politics, Media & Public Opinion, Causal Inference, Text Analysis.
+**Research Interests.** Gender & IR, Crisis Politics, Media & Public Opinion, Causal Inference, Text Analysis. 
