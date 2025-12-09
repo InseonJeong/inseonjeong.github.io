@@ -1,0 +1,60 @@
+---
+# Only the main Sass file needs front matter
+---
+
+/* =======================
+   0) UCSD 색상 정의 (변수는 import 전에 선언해야 override 됨)
+   ======================= */
+$ucsd-triton-blue: #182B49;    // 네이비(너무 진하지 않게 포인트)
+$ucsd-ocean-blue:  #00629B;    // 링크/버튼 포인트용 파랑
+$ucsd-soft-bg:     #EFF3F6;    // 아주 연한 푸른 회백(푸터 배경)
+$soft-border:      #D9E2EC;
+
+/* 링크 기본색(테마 변수) */
+$link-color: $ucsd-ocean-blue;
+
+/* 전역 폰트(테마 변수) — 애플명조 느낌 + 대체폰트 */
+$global-font-family: "AppleMyungjo", "Noto Serif KR", "Merriweather", serif;
+
+/* =======================
+   1) 테마 불러오기
+   ======================= */
+@import "minimal-mistakes/skins/default"; // 스킨
+@import "minimal-mistakes";               // 본 테마
+
+/* =======================
+   2) import 이후 규칙 오버라이드
+   ======================= */
+
+/* 전체 배경: 완전 흰색 */
+body {
+  background: #FFFFFF;
+  color: #1a1a1a;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* 제목: UCSD 네이비 톤 */
+h1, h2, h3, h4, h5, h6 {
+  color: $ucsd-triton-blue;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* 링크: Ocean Blue, hover는 조금 더 진하게 */
+a { color: $ucsd-ocean-blue; text-decoration: none; }
+a:hover, a:focus { color: darken($ucsd-ocean-blue, 12%); text-decoration: underline; }
+
+/* 상단 헤더: 흰 배경 + 아주 옅은 경계선 */
+.masthead { background: #FFFFFF; border-bottom: 1px solid $soft-border; }
+
+/* 좌측 사이드바 카드도 흰 배경 느낌 */
+.page__sidebar { background: #FFFFFF; border: none; }
+
+/* 푸터: 연한 UCSD 톤 배경 */
+.page__footer { background: $ucsd-soft-bg; border-top: 1px solid $soft-border; }
+.page__footer a { color: $ucsd-ocean-blue; }
+
+/* (선택) 본문 폭 살짝 넓히기
+.page__content { max-width: 900px; margin: 0 auto; }
+*/
