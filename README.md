@@ -16,4 +16,4 @@
 
 ## Optional
 - Replace CV page link with a local `/assets/cv.pdf` instead of Dropbox.
-- Add Publications page if needed.
+- Add Publications page if needed. 
