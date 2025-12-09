@@ -1,4 +1,5 @@
-title: Inseon Jeong
+title: Inseon Jeong            # SEO/페이지 타이틀용은 그대로 두고
+masthead_title: "Home"         # ← 화면 왼쪽 상단 표시 텍스트만 'Home'으로
 description: IR Job Market Candidate
 url: "https://inseonjeong.github.io"
 baseurl: ""
