@@ -7,7 +7,7 @@
 2. Upload these files (keep folders as-is) and commit to `main`.
 3. GitHub Actions will build & deploy.
 4. Visit `https://username.github.io`. 
-
+ 
 ## Edit
 - `_config.yml`: name, email, links, nav.
 - `index.md`: Home intro.
