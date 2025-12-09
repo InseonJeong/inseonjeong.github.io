@@ -47,3 +47,9 @@ nav:
     url: /teaching/
   - title: CV
     url: /cv/
+
+sass:
+  sass_dir: assets/css
+
+include:
+  - assets/css
