@@ -1,0 +1,45 @@
+title: Your Name
+description: IR Job Market Candidate
+url: "https://username.github.io"   # Change to your GitHub Pages URL
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+minimal_mistakes_skin: default
+locale: en
+markdown: kramdown
+
+author:
+  name: "Your Name"
+  avatar: /assets/img/profile.jpg
+  bio: "Ph.D. Candidate, UC San Diego · International Relations & Political Methodology"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:your_email@ucsd.edu"
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: https://scholar.google.com/
+    - label: "ORCID"
+      icon: "fab fa-orcid"
+      url: https://orcid.org/
+    - label: "X"
+      icon: "fab fa-x-twitter"
+      url: https://x.com/yourhandle
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Simple 4-tab nav like Alex's site
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Teaching
+    url: /teaching/
+  - title: CV
+    url: /cv/
