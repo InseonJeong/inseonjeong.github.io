@@ -1,6 +1,6 @@
 title: Your Name
 description: IR Job Market Candidate
-url: "https://username.github.io"   # Change to your GitHub Pages URL
+url: "https://inseonjeong.github.io"
 remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-include-cache
