@@ -1,0 +1,45 @@
+name: Build and Deploy Jekyll (Pages)
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - run: |
+          gem install jekyll minimal-mistakes-jekyll jekyll-include-cache jekyll-feed jekyll-sitemap
+          bundle init
+          echo 'gem "jekyll"' >> Gemfile
+          echo 'gem "minimal-mistakes-jekyll"' >> Gemfile
+          echo 'gem "jekyll-include-cache"' >> Gemfile
+          echo 'gem "jekyll-feed"' >> Gemfile
+          echo 'gem "jekyll-sitemap"' >> Gemfile
+          bundle install
+          bundle exec jekyll build -d _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
