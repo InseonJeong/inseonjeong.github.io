@@ -53,3 +53,17 @@ a:hover, a:focus { color: darken($ucsd-ocean-blue, 12%); text-decoration: underl
 /* (선택) 본문 폭 약간 넓히기
 .page__content { max-width: 900px; margin: 0 auto; }
 */
+
+/* ===== 프로필 사진 크게 만들기 ===== */
+.sidebar .author__avatar img,
+.page__sidebar .author__avatar img {
+  max-width: 160px !important;   /* 기본 100px → 160px */
+  border-radius: 50%;            /* 동그랗게 유지 */
+}
+
+.sidebar .author__avatar,
+.page__sidebar .author__avatar {
+  max-width: 160px !important;
+  margin-bottom: 1rem;
+}
+
