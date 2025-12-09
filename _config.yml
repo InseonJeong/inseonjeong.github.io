@@ -10,7 +10,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-minimal_mistakes_skin: air
+sass:
+  sass_dir: assets/css
+
 locale: en
 markdown: kramdown
 
