@@ -9,7 +9,7 @@
 4. Visit `https://username.github.io`. 
  
 ## Edit
-- `_config.yml`: name, email, links, nav.
+- `_config.yml`: name, email, links, nav. 
 - `index.md`: Home intro.
 - `pages/research.md`, `pages/teaching.md`, `pages/cv.md`.
 - `assets/`: upload `img/profile.jpg`, PDFs (e.g., `jmp.pdf`).
