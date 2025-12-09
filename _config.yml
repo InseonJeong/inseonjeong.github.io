@@ -15,13 +15,13 @@ locale: en
 markdown: kramdown
 
 author:
-  name: "Your Name"
+  name: "Inseon Jeong"
   avatar: /assets/img/profile.jpg
-  bio: "Ph.D. Candidate, UC San Diego · International Relations & Political Methodology"
+  bio: "Ph.D. Candidate, UC San Diego · IR & Methods"
   links:
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:your_email@ucsd.edu"
+      url: "mailto:your@email"
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
       url: https://scholar.google.com/
