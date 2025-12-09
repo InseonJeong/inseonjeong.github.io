@@ -1,11 +1,11 @@
 title: Inseon Jeong
 description: IR Job Market Candidate
 url: "https://inseonjeong.github.io"
-baseurl: ""                    # ← 꼭 추가!
+baseurl: ""                     # 중요
 
 remote_theme: mmistakes/minimal-mistakes
 plugins:
-  - jekyll-remote-theme        # ← remote_theme 쓰면 반드시 필요
+  - jekyll-remote-theme         # remote_theme 쓸 때 필요
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
