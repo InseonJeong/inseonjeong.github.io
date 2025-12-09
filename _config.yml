@@ -18,7 +18,7 @@ markdown: kramdown
 
 author:
   name: "Inseon Jeong"
-  avatar: /assets/img/profile.jpg
+  avatar: avatar.jpg
   bio: "Ph.D. Candidate, UC San Diego · IR & Methods"
   links:
     - label: "Email"
