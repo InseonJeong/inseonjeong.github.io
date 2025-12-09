@@ -6,7 +6,7 @@
 1. Create a public repo named `username.github.io`.
 2. Upload these files (keep folders as-is) and commit to `main`.
 3. GitHub Actions will build & deploy.
-4. Visit `https://username.github.io`.
+4. Visit `https://username.github.io`. 
 
 ## Edit
 - `_config.yml`: name, email, links, nav.
