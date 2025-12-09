@@ -1,17 +1,72 @@
 ---
+# front matter required
 ---
 
-@import "minimal-mistakes";
+/* ===== 색상 팔레트 (UC San Diego 톤, 과하지 않게) ===== */
+$ucsd-triton-blue: #182B49;   /* UCSD Navy */
+$ucsd-ocean-blue:  #00629B;   /* 포인트용 파랑 */
+$ucsd-soft-bg:     #EFF3F6;   /* 아주 연한 푸른 회백색 (푸터 배경) */
+$soft-border:      #D9E2EC;
 
-/* 본문은 세리프 */
-body, p, li {
-  font-family: "Merriweather", serif;
+/* ===== 전역(배경/폰트/링크) ===== */
+body {
+  background: #FFFFFF; /* 전체 하얀색 */
+  color: #1a1a1a;
+  font-family: "AppleMyungjo", "Noto Serif KR", "Merriweather", serif; /* 애플명조 느낌 */
   font-size: 18px;
   line-height: 1.7;
 }
 
-/* 제목은 산세리프 */
-h1, h2, h3 {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+/* 제목은 조금 또렷하게, 색은 과하지 않게 UCSD 네이비 */
+h1, h2, h3, h4, h5 {
+  font-family: "AppleMyungjo", "Noto Serif KR", "Merriweather", serif;
+  font-weight: 700;
+  color: $ucsd-triton-blue;
+  letter-spacing: 0.2px;
+}
+
+/* 링크 색상: Ocean Blue, hover는 좀 더 진하게 */
+a {
+  color: $ucsd-ocean-blue;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: darken($ucsd-ocean-blue, 12%);
+  text-decoration: underline;
+}
+
+/* 상단 헤더(메뉴 바): 완전 흰 배경 + 아주 옅은 경계선 */
+.masthead {
+  background: #FFFFFF;
+  border-bottom: 1px solid $soft-border;
+}
+
+/* 좌측 사이드바 카드도 흰 배경 + 얇은 경계 */
+.sidebar,
+.page__sidebar {
+  background: #FFFFFF;
+  border: none;
+}
+
+/* 본문 폭을 살짝 넓혀 주면 더 깔끔함(선택) */
+/*
+.page__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+*/
+
+/* 푸터: UCSD 톤의 아주 연한 배경, 링크는 Ocean Blue */
+.page__footer {
+  background: $ucsd-soft-bg;
+  border-top: 1px solid $soft-border;
+}
+.page__footer a {
+  color: $ucsd-ocean-blue;
+}
+
+/* 버튼/배지류 색 보정(있으면) */
+.btn, .label, .notice--primary {
+  background-color: $ucsd-ocean-blue;
+  border-color: $ucsd-ocean-blue;
 }
